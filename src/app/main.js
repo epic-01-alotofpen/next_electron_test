@@ -6,6 +6,9 @@ const appServe = app.isPackaged ? serve({
   directory: path.join(__dirname, "../out")
 }) : null;
 
+/**
+ *  electronのブラウザ設定（サイズなど）
+ */
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
