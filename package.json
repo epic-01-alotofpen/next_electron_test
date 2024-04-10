@@ -2,13 +2,15 @@
   "name": "next_electron_test",
   "version": "0.1.0",
   "private": true,
+  "main": "src/app/main.js",
+  "description": "Electron + NextJS example project",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "concurrently -n \"NEXT,ELECTRON\" -c \"yellow,blue\" --kill-others \"next dev\" \"electron .\"",
+    "build": "next build && electron-builder",
     "lint": "next lint"
   },
   "dependencies": {
+    "electron-serve": "^1.3.0",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18"
