@@ -1,8 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project and electron app project.
+#
+Next.jsにElectronのモジュールを追加してElectronデスクトップアプリを実装できるかのプロジェクト(nextronを使用しない)
 
 ## Getting Started
 
-First, run the development server:
+以下でビルドツールを含むElectronのWindow表示:
 
 ```bash
 npm run dev
@@ -16,7 +17,8 @@ bun dev
 
 ##  build
 
-Regarding buiid, it is unclear whether this is a problem with the electron settings, but the contents of next.js are not displayed, so we are investigating.
+以下のコマンドでビルドが実行される。
+ビルド完了後にプロジェクト上にdistディレクトリが作成される。このディレクトリ内部にexeファイルがあるため起動するとElectronのデスクトップアプリケーションが起動されるがnext.jsの内容が表示されないため修正方法確認中
 
 ```bash
 npm run build
